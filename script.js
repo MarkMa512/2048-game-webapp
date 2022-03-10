@@ -1,4 +1,4 @@
-import Grid from "./Grid.js"
+import Grid from "./components/Grid.js"
 
 const gameBoard = document.getElementById("game-board")
 
