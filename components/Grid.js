@@ -25,6 +25,16 @@ export default class Grid {
             })
         console.log(this.cells)
     }
+
+    get #emptyCells() {
+        return this.#cells.filter(cell => cell.tile == null)
+    }
+
+    randomEmptyCell() {
+        // return a random empty cell 
+        const randomIndex = Math.floor(Math.random() * this.#emptyCells.length)
+        return this.#emptyCells[randomIndex]
+    }
 }
 // create all the cell elements inside a grid element
 function createCellElements(gridElement) {

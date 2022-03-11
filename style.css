@@ -35,8 +35,8 @@ body{
 
 .tile{
     /* variables to be manipulated by JS */
-    --x:2; 
-    --y:2; 
+    /* --x:2; 
+    --y:2;  */
     --backgroud-lightness:20%; 
     --text-ligntness: 80%; 
     position: absolute;
