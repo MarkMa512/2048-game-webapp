@@ -23,7 +23,7 @@ export default class Grid {
                 let y = Math.floor(index / GRID_SIZE)
                 return new Cell(cellElement, x, y)
             })
-        console.log(this.cells)
+        // console.log(this.#cells)
     }
 
     get #emptyCells() {
@@ -33,6 +33,7 @@ export default class Grid {
     randomEmptyCell() {
         // return a random empty cell 
         const randomIndex = Math.floor(Math.random() * this.#emptyCells.length)
+        console.log(randomIndex)
         return this.#emptyCells[randomIndex]
     }
 }

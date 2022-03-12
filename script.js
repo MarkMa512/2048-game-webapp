@@ -5,7 +5,7 @@ const gameBoard = document.getElementById("game-board")
 
 const grid = new Grid(gameBoard)
 
-console.log(grid.randomEmptyCell())
+// console.log(grid.randomEmptyCell())
 
 // get a random empty cell and assign it to a new tile 
 grid.randomEmptyCell().tile = new Tile(gameBoard)

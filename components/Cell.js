@@ -5,9 +5,9 @@ export default class Cell {
     #tile
 
     constructor(cellElement, x, y) {
-        this.cellElement = cellElement
-        this.x = x
-        this.y = y
+        this.#cellElement = cellElement
+        this.#x = x
+        this.#y = y
     }
 
     get tile() {
@@ -24,9 +24,9 @@ export default class Cell {
     //      */
     // }
 
-    set tile(value) {
-        this.#tile = value
-        if (value == null) return
+    set tile(displayValue) {
+        this.#tile = displayValue
+        if (displayValue == null) return
         this.#tile.x = this.#x
         this.#tile.y = this.#y
     }
